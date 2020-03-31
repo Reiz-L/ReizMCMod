@@ -1,0 +1,16 @@
+[
+{
+  "modid": "reizmod",
+  "name": "Reiz's Mod",
+  "description": "This is a Minecraft Mod by Reiz.",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Reiz"],
+  "credits": "This is a Minecraft Forge mod by Reiz",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
