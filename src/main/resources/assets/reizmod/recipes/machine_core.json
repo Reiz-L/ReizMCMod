@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "XAX",
+        "A#A",
+        "XAX"
+    ],
+    "key": {
+        "X":{
+            "item": "reizmod:iron_shell"
+        },
+        "#":{
+            "item": "minecraft:diamond"
+        },
+        "A":{
+            "item": "reizmod:lantian_block"
+        }
+    },
+    "result": {
+        "item": "reizmod:machine_core"
+    }
+}

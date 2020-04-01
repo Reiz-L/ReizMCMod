@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "XXX",
+        "X#X",
+        "XXX"
+    ],
+    "key": {
+        "X":{
+            "item": "reizmod:iron_shell"
+        },
+        "#":{
+          "item": "reizmod:machine_core"  
+        }
+    },
+    "result": {
+        "item": "reizmod:meiqizhao"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reizmod:lantian_block"
+        }
+    ],
+    "result":
+    {
+        "item": "reizmod:lantian_ingot",
+        "count": 9
+    }
+}
