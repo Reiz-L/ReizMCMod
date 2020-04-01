@@ -13,6 +13,7 @@ public class BlockInitModel {
 		register(BlockInit.LANTIAN);
 		register(BlockInit.MISSTEXTURES);
 		register(BlockInit.SUPERHARD);
+		register(BlockInit.MEIQIZHAO_BLOCK);
 	}
 	public static void register(Block block) {
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(),"inventory"));

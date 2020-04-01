@@ -6,3 +6,6 @@ item.lantian_ass.name=蓝天的ass
 itemGroup.ReizMod=Reiz制作的Mod
 item.rtx2080ti.name=NVIDIA GeForce RTX 2080 Ti(核弹)
 item.ignited_2080ti.name=点燃的RTX2080ti(超级危险的核弹)
+item.iron_shell.name=§e铁壳子
+item.machine_core.name=§cCPU
+tile.meiqizhao_block.name=煤气灶

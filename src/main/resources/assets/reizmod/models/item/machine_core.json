@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-	"layer0": "reizmod:items/meiqizhao"
+	"layer0": "reizmod:items/machine_core"
 }
 
 }

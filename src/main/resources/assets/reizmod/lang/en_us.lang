@@ -6,3 +6,6 @@ item.lantian_ass.name=Lantian's Ass
 itemGroup.ReizMod=Reiz's Mod
 item.rtx2080ti.name=NVIDIA GeForce RTX 2080 Ti
 item.ignited_2080ti.name=Ignited RTX 2080 Ti
+item.iron_shell.name=Iron Shell
+item.machine_core.name=CPU
+tile.meiqizhao_block.name=MeiQiZhao (This is Chinese)

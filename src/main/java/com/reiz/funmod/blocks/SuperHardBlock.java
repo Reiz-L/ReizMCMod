@@ -6,7 +6,11 @@ import com.reiz.funmod.creativetab.CreativeTabReizmod;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SuperHardBlock extends BlockBase{
 	public SuperHardBlock(){
@@ -16,4 +20,9 @@ public class SuperHardBlock extends BlockBase{
 		this.setLightOpacity(0);
 		this.setLightLevel(3);
 	}
+	@SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.TRANSLUCENT;
+    }
 }
