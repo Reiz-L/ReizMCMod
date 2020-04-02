@@ -13,8 +13,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(name = Reference.NAME,modid = Reference.MODID , version = Reference.VERSION)
 public class main {
+	public static final String MODID = "reizmod";
+    public static final String NAME = "Reiz's Mod";
+    public static final String VERSION = "1.0.2";
 	@Instance
 	public static main instance = new main();
+	
 	
 	@SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS,clientSide = Reference.CLIENT_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -24,6 +28,7 @@ public class main {
 		proxy.preInit(event);
 		Util.logger = event.getModLog();
 		Util.logger.warn("It's PreInit!");
+		
 	}
 	
 	@EventHandler

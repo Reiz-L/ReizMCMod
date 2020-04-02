@@ -12,6 +12,13 @@ public class ItemInitModel {
 		register(ItemInit.LANTIAN_INGOT);
 		register(ItemInit.MACHINE_CORE);
 		register(ItemInit.RTX2080TI);
+		register(ItemInit.RECORDER);
+		register(ItemInit.BLACK_BREAD);
+		register(ItemInit.LANTIAN_FLESH);
+		register(ItemInit.EXPERIENCE_CARDN);
+		register(ItemInit.EXPERIENCE_CARDA);
+		register(ItemInit.EXPERIENCE_CARDU);
+		register(ItemInit.LANTIAN_SWORD);
 	}
 	public static void register(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "###",
+        "#X#",
+        "###"
+    ],
+    "key": {
+        "X":{
+            "item": "reizmod:rtx2080ti"
+        },
+        "#":{
+            "item": "minecraft:flint_and_steel"
+        }
+    },
+    "result": {
+        "item": "reizmod:ignited_2080ti"
+    }
+}
