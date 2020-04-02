@@ -1,19 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern":[
-        " X ",
-        " X ",
-        " # "
+        "   ",
+        "X X",
+        "X X"
     ],
     "key": {
         "X":{
             "item": "reizmod:lantian_ingot"
-        },
-        "#":{
-          "item": "minecraft:stick"  
         }
     },
     "result": {
-        "item": "reizmod:lantian_sword"
+        "item": "reizmod:lantian_boots"
     }
 }

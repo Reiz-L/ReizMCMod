@@ -1,5 +1,11 @@
 package com.reiz.funmod.item;
 
+import com.reiz.funmod.creativetab.CreativeTabInit;
+import com.reiz.funmod.item.armor.ArmorBase;
+import com.reiz.funmod.item.armor.LantianBoots;
+import com.reiz.funmod.item.armor.LantianChestplate;
+import com.reiz.funmod.item.armor.LantianHelmet;
+import com.reiz.funmod.item.armor.LantianLeggings;
 import com.reiz.funmod.item.itemlist.FoodBlackBread;
 import com.reiz.funmod.item.itemlist.FoodExperienceCardA;
 import com.reiz.funmod.item.itemlist.FoodExperienceCardN;
@@ -12,14 +18,20 @@ import com.reiz.funmod.item.itemlist.lantianAss;
 import com.reiz.funmod.item.itemlist.lantianIngot;
 import com.reiz.funmod.item.itemlist.machineCore;
 import com.reiz.funmod.item.itemlist.rtx2080Ti;
+import com.reiz.funmod.item.tools.AxeLantian;
+import com.reiz.funmod.item.tools.PickaxeLantian;
 import com.reiz.funmod.item.tools.SwordLantian;
 import com.reiz.funmod.item.tools.ToolSword;
 import com.reiz.funmod.util.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -40,8 +52,15 @@ public class ItemInit {
 	public static final Item EXPERIENCE_CARDU = new FoodExperienceCardU();
 	//tools Material
 	public static final ToolMaterial MATERIAL_LANTIAN = EnumHelper.addToolMaterial("lantian_tool_material", 2, 350, 7.0F, 2.5F, 14);
-	
+	public static final ArmorMaterial LANTIAN_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("lantian_armor_material", Reference.MODID + ":lantian", 16, new int[] {3,6,6,3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	//tools
 	public static final ItemSword LANTIAN_SWORD = new SwordLantian();
+	public static final ItemPickaxe LANTIAN_PICKAXE = new PickaxeLantian();
+	public static final ItemAxe LANTIAN_AXE = new AxeLantian();
 	
+	//Armor
+	public static final Item LANTIAN_HELMET = new LantianHelmet();
+	public static final Item LANTIAN_CHESTPLATE = new LantianChestplate();
+	public static final Item LANTIAN_LEGGINGS = new LantianLeggings();
+	public static final Item LANTIAN_BOOTS = new LantianBoots();
 }

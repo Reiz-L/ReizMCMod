@@ -1,8 +1,8 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern":[
-        " X ",
-        " X ",
+        "XXX",
+        " # ",
         " # "
     ],
     "key": {
@@ -14,6 +14,6 @@
         }
     },
     "result": {
-        "item": "reizmod:lantian_sword"
+        "item": "reizmod:lantian_pickaxe"
     }
 }

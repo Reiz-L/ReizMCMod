@@ -19,6 +19,12 @@ public class ItemInitModel {
 		register(ItemInit.EXPERIENCE_CARDA);
 		register(ItemInit.EXPERIENCE_CARDU);
 		register(ItemInit.LANTIAN_SWORD);
+		register(ItemInit.LANTIAN_PICKAXE);
+		register(ItemInit.LANTIAN_AXE);
+		register(ItemInit.LANTIAN_HELMET);
+		register(ItemInit.LANTIAN_CHESTPLATE);
+		register(ItemInit.LANTIAN_LEGGINGS);
+		register(ItemInit.LANTIAN_BOOTS);
 	}
 	public static void register(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));
