@@ -28,7 +28,7 @@ public class FoodLantianFlesh extends ItemFood{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("��6This Food is lantian's flesh,That's his ass flesh!");
+		list.add("��6This Food is lantian's flesh,That's his ass flesh!");
 	}
 
 	@Override
@@ -36,8 +36,8 @@ public class FoodLantianFlesh extends ItemFood{
 		if (!worldIn.isRemote) {
 			player.addPotionEffect(new PotionEffect(MobEffects.HUNGER));
 			player.addExperience(10);
-			player.sendMessage(new TextComponentString("��aYou Ate lantian's Flesh,It's like eating his Shit!"));
-			player.sendMessage(new TextComponentString("��6But,You got some experience!"));
+			player.sendMessage(new TextComponentString("§a你吃下了蓝天的肉,吃起来感觉像在吃S**T!"));
+			player.sendMessage(new TextComponentString("§6但是你获得了10经验"));
 		}
 		super.onFoodEaten(stack, worldIn, player);
 	}

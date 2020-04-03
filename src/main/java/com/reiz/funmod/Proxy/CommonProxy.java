@@ -8,6 +8,7 @@ import com.reiz.funmod.init.SmeltingInit;
 import com.reiz.funmod.item.ItemInit;
 import com.reiz.funmod.item.ItemInitModel;
 
+import io.netty.handler.codec.AsciiHeadersEncoder.NewlineType;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
