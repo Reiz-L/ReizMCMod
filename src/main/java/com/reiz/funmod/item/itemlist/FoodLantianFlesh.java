@@ -36,8 +36,8 @@ public class FoodLantianFlesh extends ItemFood{
 		if (!worldIn.isRemote) {
 			player.addPotionEffect(new PotionEffect(MobEffects.HUNGER));
 			player.addExperience(10);
-			player.sendMessage(new TextComponentString("§a你吃下了蓝天的肉,吃起来感觉像在吃S**T!"));
-			player.sendMessage(new TextComponentString("§6但是你获得了10经验"));
+			player.sendMessage(new TextComponentString("§aYou ate lantian's flesh,it's like eating shit!"));
+			player.sendMessage(new TextComponentString("§6but,you got 10exp"));
 		}
 		super.onFoodEaten(stack, worldIn, player);
 	}

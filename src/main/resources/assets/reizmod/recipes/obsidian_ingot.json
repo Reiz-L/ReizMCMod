@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reizmod:obsidian_ingot"
+        }
+    ],
+    "result":
+    {
+        "item": "minecraft:obsidian",
+        "count": 1
+    }
+}

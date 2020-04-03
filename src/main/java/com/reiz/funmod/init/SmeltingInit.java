@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.reiz.funmod.blocksInit.BlockInit;
 import com.reiz.funmod.item.ItemInit;
-
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 
 public class SmeltingInit {
@@ -16,6 +16,7 @@ public class SmeltingInit {
 		register(new ItemStack(Items.LEATHER), new ItemStack(Items.BEEF), 25);
 		register(new ItemStack(BlockInit.MEIQIZHAO_BLOCK), new ItemStack(ItemInit.RTX2080TI), 30);
 		register(new ItemStack(Items.IRON_DOOR), new ItemStack(ItemInit.LANTIAN_ASS), 25);
+		register(new ItemStack(Blocks.OBSIDIAN), new ItemStack(ItemInit.OBSIDIAN_INGOT), 30);
 	}
 	
 	private static void register(ItemStack front,ItemStack after,float xp) {

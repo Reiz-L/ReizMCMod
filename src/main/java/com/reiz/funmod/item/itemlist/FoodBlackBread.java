@@ -34,6 +34,6 @@ public class FoodBlackBread extends ItemFood{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("§e这个玩意是给蓝天吃的");
+		list.add("§eThis Food is give lantianDog's food!");
 	}
 }

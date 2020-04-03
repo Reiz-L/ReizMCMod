@@ -16,10 +16,5 @@ public class LantianLeggings extends ArmorBase{
 	public LantianLeggings() {
 		super("lantian_leggings", ItemInit.LANTIAN_ARMOR_MATERIAL, 3, EntityEquipmentSlot.LEGS, CreativeTabInit.REIZMOD);
 	}
-	@Override
-	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
-		super.addInformation(itemstack, world, list, flag);
-		list.add("穿上你就和蓝天紧紧的**在了一起!呕!!");
-	}
 
 }

@@ -18,6 +18,6 @@ public class machineCore extends ItemBase{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("§e这个是i7不知道什么型号的CPU,你不能吃它！");
+		list.add("§ethis is Intel Core i7 CPU,LIKE A GARBAGE!");
 	}
 }
