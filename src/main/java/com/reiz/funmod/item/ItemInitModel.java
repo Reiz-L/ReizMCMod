@@ -39,6 +39,17 @@ public class ItemInitModel {
 		register(ItemInit.OBSIDIAN_PICKKAXE);
 		register(ItemInit.AYANAMI_SWORD);
 		register(ItemInit.XINZHIMOFANG);
+		register(ItemInit.OBSIDIAN_HOE);
+		register(ItemInit.ICESTICK);
+		register(ItemInit.ICE_SWORD);
+		register(ItemInit.ICE_AXE);
+		register(ItemInit.ICE_PICKAXE);
+		register(ItemInit.ICE_PICKKAXE);
+		register(ItemInit.ICE_SPADE);
+		register(ItemInit.ICE_HELMET);
+		register(ItemInit.ICE_CHESTPLATE);
+		register(ItemInit.ICE_LEGGINGS);
+		register(ItemInit.ICE_BOOTS);
 	}
 	public static void register(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));

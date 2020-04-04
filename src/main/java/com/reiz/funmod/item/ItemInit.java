@@ -2,6 +2,10 @@ package com.reiz.funmod.item;
 
 import com.reiz.funmod.creativetab.CreativeTabInit;
 import com.reiz.funmod.item.armor.ArmorBase;
+import com.reiz.funmod.item.armor.IceBoots;
+import com.reiz.funmod.item.armor.IceChestplate;
+import com.reiz.funmod.item.armor.IceHelmet;
+import com.reiz.funmod.item.armor.IceLeggings;
 import com.reiz.funmod.item.armor.LantianBoots;
 import com.reiz.funmod.item.armor.LantianChestplate;
 import com.reiz.funmod.item.armor.LantianHelmet;
@@ -18,6 +22,7 @@ import com.reiz.funmod.item.itemlist.FoodExperienceCardS;
 import com.reiz.funmod.item.itemlist.FoodExperienceCardU;
 import com.reiz.funmod.item.itemlist.FoodLantianFlesh;
 import com.reiz.funmod.item.itemlist.Recorder;
+import com.reiz.funmod.item.itemlist.iceStick;
 import com.reiz.funmod.item.itemlist.ignited2080Ti;
 import com.reiz.funmod.item.itemlist.ironShell;
 import com.reiz.funmod.item.itemlist.lantianAss;
@@ -26,13 +31,19 @@ import com.reiz.funmod.item.itemlist.machineCore;
 import com.reiz.funmod.item.itemlist.obsidianIngot;
 import com.reiz.funmod.item.itemlist.rtx2080Ti;
 import com.reiz.funmod.item.itemlist.xinzhimofang;
+import com.reiz.funmod.item.tools.AxeIce;
 import com.reiz.funmod.item.tools.AxeLantian;
 import com.reiz.funmod.item.tools.AxeObsidian;
+import com.reiz.funmod.item.tools.HoeObsidian;
+import com.reiz.funmod.item.tools.PickaxeIce;
 import com.reiz.funmod.item.tools.PickaxeLantian;
 import com.reiz.funmod.item.tools.PickaxeObsidian;
+import com.reiz.funmod.item.tools.PickkaxeIce;
 import com.reiz.funmod.item.tools.PickkaxeObsidian;
+import com.reiz.funmod.item.tools.SpadeIce;
 import com.reiz.funmod.item.tools.SpadeObsidian;
 import com.reiz.funmod.item.tools.SwordAyanami;
+import com.reiz.funmod.item.tools.SwordIce;
 import com.reiz.funmod.item.tools.SwordLantian;
 import com.reiz.funmod.item.tools.SwordObsidian;
 import com.reiz.funmod.item.tools.ToolSword;
@@ -45,6 +56,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
@@ -70,12 +82,15 @@ public class ItemInit {
 	public static final Item EXPERIENCE_CARDS = new FoodExperienceCardS();
 	public static final Item OBSIDIAN_INGOT = new obsidianIngot();
 	public static final Item XINZHIMOFANG = new xinzhimofang();
+	public static final Item ICESTICK = new iceStick();
 	//tools Material
 	public static final ToolMaterial MATERIAL_LANTIAN = EnumHelper.addToolMaterial("lantian_tool_material", 2, 350, 7.0F, 2.5F, 14);
 	public static final ArmorMaterial LANTIAN_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("lantian_armor_material", Reference.MODID + ":lantian", 16, new int[] {3,6,6,3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
-	public static final ToolMaterial MATERIAL_OBSIDIAN = EnumHelper.addToolMaterial("obsidian_tool_material", 4, 2500, 9.0F, 5.0F, 30);
-	public static final ArmorMaterial OBSIDIAN_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("obsidian_armor_material", Reference.MODID + ":obsidian", 20, new int[] {8,4,8,8}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
+	public static final ToolMaterial MATERIAL_OBSIDIAN = EnumHelper.addToolMaterial("obsidian_tool_material", 4, 2500, 10.0F, 5.0F, 30);
+	public static final ArmorMaterial OBSIDIAN_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("obsidian_armor_material", Reference.MODID + ":obsidian", 20, new int[] {8,8,8,4}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 	public static final ToolMaterial MATERIAL_XINZHIMOFANG = EnumHelper.addToolMaterial("xinzhimofang_tool_material", 3, 1080, 6.0F, 10.0F, 30);
+	public static final ToolMaterial MATERIAL_ICE = EnumHelper.addToolMaterial("ice_tool_material", 3, 1200, 6.0F, 2.0F, 10);
+	public static final ArmorMaterial ICE_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("ice_armor_material", Reference.MODID + ":ice", 15, new int[] {3,5,5,2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.5F);
 	//tools
 	public static final ItemSword LANTIAN_SWORD = new SwordLantian();
 	public static final ItemPickaxe LANTIAN_PICKAXE = new PickaxeLantian();
@@ -85,7 +100,13 @@ public class ItemInit {
 	public static final ItemAxe OBSIDIAN_AXE = new AxeObsidian();
 	public static final ItemSpade OBSIDIAN_SPADE = new SpadeObsidian();
 	public static final ItemTool OBSIDIAN_PICKKAXE = new PickkaxeObsidian();
+	public static final ItemHoe OBSIDIAN_HOE = new HoeObsidian();
 	public static final ItemSword AYANAMI_SWORD = new SwordAyanami();
+	public static final ItemSword ICE_SWORD = new SwordIce();
+	public static final ItemPickaxe ICE_PICKAXE = new PickaxeIce();
+	public static final ItemAxe ICE_AXE = new AxeIce();
+	public static final ItemSpade ICE_SPADE = new SpadeIce();
+	public static final ItemTool ICE_PICKKAXE = new PickkaxeIce();
 	//Armor
 	public static final Item LANTIAN_HELMET = new LantianHelmet();
 	public static final Item LANTIAN_CHESTPLATE = new LantianChestplate();
@@ -95,4 +116,8 @@ public class ItemInit {
 	public static final Item OBSIDIAN_CHESTPLATE = new ObsidianChestplate();
 	public static final Item OBSIDIAN_LEGGINGS = new ObsidianLeggings();
 	public static final Item OBSIDIAN_BOOTS = new ObsidianBoots();
+	public static final Item ICE_HELMET = new IceHelmet();
+	public static final Item ICE_CHESTPLATE = new IceChestplate();
+	public static final Item ICE_LEGGINGS = new IceLeggings();
+	public static final Item ICE_BOOTS = new IceBoots();
 }

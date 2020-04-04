@@ -46,7 +46,7 @@ public class ignited2080Ti extends ItemBase{
                 }
             }
 				worldIn.createExplosion(null, (int) x, (int) y, (int) z, (float) 100, true);
-				playerIn.sendMessage(new TextComponentString("Â§eYou CAN EXPLODE!"));
+				playerIn.sendMessage(new TextComponentString("¡ìeYou CAN EXPLODE!"));
 			
 		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);

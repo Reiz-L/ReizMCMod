@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "XXX",
+        " # ",
+        " # "
+    ],
+    "key": {
+        "X":{
+            "item": "reizmod:obsidian_ingot"
+        },
+        "#":{
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reizmod:obsidian_pickaxe"
+    }
+}

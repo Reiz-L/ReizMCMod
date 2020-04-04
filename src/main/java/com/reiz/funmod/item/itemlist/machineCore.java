@@ -18,6 +18,6 @@ public class machineCore extends ItemBase{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("Â§ethis is Intel Core i7 CPU,LIKE A GARBAGE!");
+		list.add("¡ìethis is Intel Core i7 CPU,LIKE A GARBAGE!");
 	}
 }
