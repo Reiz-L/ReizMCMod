@@ -24,7 +24,7 @@ public class ignited2080Ti extends ItemBase{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("Â§cThis is an extremely dangerous nuclear weapon");
+		list.add("This is an extremely dangerous nuclear weapon");
 	}
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
@@ -46,7 +46,7 @@ public class ignited2080Ti extends ItemBase{
                 }
             }
 				worldIn.createExplosion(null, (int) x, (int) y, (int) z, (float) 100, true);
-				playerIn.sendMessage(new TextComponentString("¡ìeYou CAN EXPLODE!"));
+				playerIn.sendMessage(new TextComponentString("You CAN EXPLODE!"));
 			
 		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);

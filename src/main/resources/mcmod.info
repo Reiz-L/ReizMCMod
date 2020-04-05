@@ -3,7 +3,7 @@
   "modid": "reizmod",
   "name": "Reiz's Mod",
   "description": "This is a Minecraft Mod by Reiz.",
-  "version": "1.0",
+  "version": "1.0.6",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

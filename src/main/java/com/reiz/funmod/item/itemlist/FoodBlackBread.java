@@ -26,7 +26,7 @@ public class FoodBlackBread extends ItemFood{
 	@Override
 	protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
 		if (!worldIn.isRemote) {
-			player.addPotionEffect(new PotionEffect(MobEffects.LUCK));
+			player.addPotionEffect(new PotionEffect(MobEffects.LUCK,30*20));
 		}
 		super.onFoodEaten(stack, worldIn, player);
 	}

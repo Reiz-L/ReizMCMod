@@ -27,7 +27,7 @@ public class FoodExperienceCardB extends ItemFood{
 	@Override
 	public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
-		list.add("¡ì6This is Arknight's Basic Experience Card!");
+		list.add("This is Arknight's Basic Experience Card!");
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class FoodExperienceCardB extends ItemFood{
 		if (!worldIn.isRemote) {
 			player.addPotionEffect(new PotionEffect(MobEffects.INSTANT_DAMAGE));
 			player.addExperience(15);
-			player.sendMessage(new TextComponentString("¡ìaYou ate the Basic Experience Card,Got 15 Exp!"));
+			player.sendMessage(new TextComponentString("You ate the Basic Experience Card,Got 15 Exp!"));
 		}
 		super.onFoodEaten(stack, worldIn, player);
 	}

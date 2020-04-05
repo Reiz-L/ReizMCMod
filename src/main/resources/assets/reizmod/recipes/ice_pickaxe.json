@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "XXX",
+        " # ",
+        " # "
+    ],
+    "key": {
+        "X":{
+            "item": "minecraft:ice"
+        },
+        "#":{
+            "item": "reizmod:icestick"
+        }
+    },
+    "result": {
+        "item": "reizmod:ice_pickaxe"
+    }
+}

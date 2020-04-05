@@ -30,11 +30,12 @@ public class SwordAyanami extends ToolSword{
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		if (!worldIn.isRemote) {
-			playerIn.sendMessage(new TextComponentString("¡ìaYou get some buffs"));
-			playerIn.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST));
-			playerIn.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE));
-			playerIn.addPotionEffect(new PotionEffect(MobEffects.INSTANT_DAMAGE));
-			playerIn.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION));
+			playerIn.sendMessage(new TextComponentString("You get some buffs"));
+			playerIn.addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST,30*20));
+			playerIn.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE,30*20));
+			playerIn.addPotionEffect(new PotionEffect(MobEffects.HASTE,30*20));
+			playerIn.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,30*20));
+			
 		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);
 	}
